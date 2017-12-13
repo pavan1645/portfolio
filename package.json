@@ -4,19 +4,20 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --port process.env.PORT",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
+    "postinstall": "ng build --aot -prod",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
-    "@angular/cli": "1.5.4",
-    "@angular/compiler-cli": "^5.0.0",
     "@angular/animations": "^5.0.0",
+    "@angular/cli": "1.5.4",
     "@angular/common": "^5.0.0",
     "@angular/compiler": "^5.0.0",
+    "@angular/compiler-cli": "^5.0.0",
     "@angular/core": "^5.0.0",
     "@angular/forms": "^5.0.0",
     "@angular/http": "^5.0.0",
@@ -24,12 +25,13 @@
     "@angular/platform-browser-dynamic": "^5.0.0",
     "@angular/router": "^5.0.0",
     "core-js": "^2.4.1",
+    "express": "^4.16.2",
     "jquery": "^3.2.1",
     "particles.js": "^2.0.0",
     "rxjs": "^5.5.2",
     "slick-carousel": "^1.8.1",
-    "zone.js": "^0.8.14",
-    "typescript": "~2.4.2"
+    "typescript": "~2.4.2",
+    "zone.js": "^0.8.14"
   },
   "devDependencies": {
     "@angular/language-service": "^5.0.0",
