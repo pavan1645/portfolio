@@ -1,0 +1,29 @@
+<div id="work" class="vh100" style="">
+	<div id="particles-js" style="">
+	</div>
+	<div class="container py-4 text-center">
+		<div class="row">
+			<hr class="mt-4 px-0 col-5 titleHR">
+			<div  class="mx-0 col-sm-2">
+				<h1 class="title">Work</h1>
+			</div>
+			<hr class="mt-4 px-0 col-5 titleHR">
+		</div>
+		<div class="pt-4 px-4">
+			<div class="row pb-3">
+				<div class="col-md-4 mb-2" *ngFor="let project of projects">
+					<a [href]="project.link" target="_blank">
+						<div class="project_image text-left">
+							<img [src]="project.image" class="img-fluid">
+							<div class="overlay px-2 pt-3">
+								<h6 class="py-2 px-3 mr-2" *ngFor="let tag of project.tags">{{tag}}</h6>
+							</div>
+						</div>
+						<h4 class="pt-2 mb-0"><strong>{{project.title}}</strong></h4>
+					</a>
+					<h6>{{project.desc}}</h6>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

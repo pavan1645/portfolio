@@ -1,0 +1,74 @@
+a, a:active, a:hover, a:focus, a:visited{color: black; text-decoration: none;}
+
+.row{margin: 0 !important}
+nav {padding: 0rem 1rem !important}
+nav a {line-height: 32px; padding-left: 0.5rem !important}
+nav .active {background-color: red;}
+.vh100{min-height: 100vh;}
+.vh75{min-height: 75vh}
+.vh50{min-height: 50vh;}
+.vh25{min-height: 25vh;}
+.titleHR{
+	display: inline-block;
+	height: 0.2px
+}
+.title{
+	display: inline;
+	padding: 0;
+}
+
+#hero{background-image: url('../images/code_bg.jpg');}
+#hero a {color: white}
+.centerCard {margin-top: auto !important}
+.centerCardLeft {
+	padding: 0;
+	background-size: cover;
+	background-position: center;
+	min-height: 50vh
+}
+.centerCardLeft, .centerCardRight {
+	-webkit-animation-duration: 1s;
+}
+.fa-angle-right,.fa-angle-left{cursor: pointer;}
+.fa-angle-left{position: absolute;z-index: 3}
+
+#about{background-color: #f2f2f2}
+#about .titleHR,
+#work .titleHR,
+#technologies .titleHR,
+#contact .titleHR{background-color: black;}
+#education,
+#experience, 
+#achievement{background-color: #cd9933; color: white}
+#education .titleHR, 
+#experience .titleHR,
+#achievement .titleHR{background-color: white;}
+
+
+.tl:first-child > .timeline-item{border-image: linear-gradient(to bottom, transparent 7%, white 7%, white 100%) 1 100%; border-image-width: 0 0 0 2px}
+.tl:last-child > .timeline-item{border-image: linear-gradient(to bottom, white 0%, white 7%, transparent 7%, transparent 100%) 1 100%; border-image-width: 0 0 0 2px}
+.timeline-item{border-left: 2px solid white; padding-bottom: 20px;}
+.timeline-item::after {
+	width: 10px;
+	height: 10px;
+	display: block;
+	top: 7%;
+	position: absolute;
+	left: -6px;
+	border-radius: 10px;
+	content: '';
+	border: 2px solid white;
+	background: white;
+}
+.tl {
+	visibility: hidden;
+}
+.slick-prev:before, .slick-next:before {
+  color: #404086;
+}
+
+@media screen and (max-width: 768px){
+	.fa-angle-right{position: absolute; right: 0}
+	.fa-angle-right,.fa-angle-left{color: black !important}
+	.row .titleHR{display: none}
+}

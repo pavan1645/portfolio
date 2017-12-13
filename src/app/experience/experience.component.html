@@ -1,0 +1,22 @@
+<div id="experience" class="vh100">
+	<div class="container py-4">
+		<div class="row text-center">
+			<hr class="mt-4 px-0 mx-0 col-4 titleHR">
+			<div  class="col-sm-4">
+				<h1 class="title">Experience</h1>
+			</div>
+			<hr class="mt-4 px-0 mx-0 col-4 titleHR">
+		</div>
+		<div class="p-md-4">
+			<div class="row animated tl" *ngFor="let experience of experiences">
+				<div class="col-3 text-md-right">
+					<h4>{{experience.year}}</h4>
+				</div>
+				<div class="col-9 col-md-7 timeline-item text-justify">
+					<h4 class="text-uppercase">{{experience.title}}</h4>
+					<h6>{{experience.desc}}</h6>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

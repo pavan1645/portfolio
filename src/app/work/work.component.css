@@ -1,0 +1,27 @@
+.project_image {position: relative;}
+.overlay{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	transition: .5s ease;
+	background-color: #404086;
+	opacity: 0;
+}
+.project_image:hover .overlay {
+	opacity: 0.8;
+}
+.overlay h6 {
+	width: auto;
+	background-color: red;
+	color: #fff;
+	border-radius: 25px;
+	display: inline-block;
+}
+
+#particles-js{
+	position: absolute;
+	width: 100%;
+	height: 100%
+}

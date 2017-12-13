@@ -1,0 +1,34 @@
+<div id="about" class="vh50">
+	<div class="container py-4 text-center">
+		<div class="row">
+			<hr class="mt-4 px-0 col-4 titleHR">
+			<div class="col-sm-4">
+				<h1 class="title">About</h1>
+			</div>
+			<hr class="mt-4 px-0 col-4 titleHR">
+		</div>
+		<h5 class="pt-4 px-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quaerat, blanditiis aut quasi, natus tempora deserunt totam eum doloremque ducimus numquam obcaecati repellat? Odit ab exercitationem beatae, laboriosam suscipit et! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quaerat, blanditiis aut quasi, natus tempora deserunt totam eum doloremque ducimus numquam obcaecati repellat? Odit ab exercitationem beatae, laboriosam suscipit et! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quaerat, blanditiis aut quasi, natus tempora deserunt totam eum doloremque ducimus numquam obcaecati repellat? Odit ab exercitationem beatae, laboriosam suscipit et!</h5>
+	</div>
+</div>
+<div id="education" class="vh50">
+	<div class="container py-4">
+		<div class="row text-center">
+			<hr class="mt-4 px-0 mx-0 col-4 titleHR">
+			<div  class="col-sm-4">
+				<h1 class="title">Education</h1>
+			</div>
+			<hr class="mt-4 px-0 mx-0 col-4 titleHR">
+		</div>
+		<div class="p-md-4">
+			<div class="row animated tl" *ngFor="let item of items">
+				<div class="col-3 text-md-right">
+					<h4>{{item.year}}</h4>
+				</div>
+				<div class="col-9 timeline-item">
+					<h4 class="text-uppercase">{{item.title}}</h4>
+					<h6>{{item.desc}}</h6>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
