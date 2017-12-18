@@ -2,10 +2,10 @@
 	<div class="row">
 		<hr class="mt-4 px-0 col-sm-3 titleHR">
 		<div  class="col-sm-5 text-center">
-			<h1 class="title">Technologies</h1>
+			<h1 class="title">Technologies <hr class="underlineHR"> </h1>
 		</div>
 		<hr class="mt-4 px-0 col-sm-3 titleHR">
-		<div class="row pt-4 top" style="width: 100%">
+		<div class="row pt-4 techSlide" style="width: 100%">
 			<div class="col-sm-3" *ngFor="let tech of techs">
 				<img [src]="tech" class="img-fluid">
 			</div>
@@ -17,10 +17,23 @@
 		<div class="row">
 			<hr class="mt-4 px-0 col-sm-3 titleHR">
 			<div  class="col-sm-5 text-center">
-				<h1 class="title">Achievement</h1>
+				<h1 class="title">Achievement <hr class="underlineHR inverse"> </h1>
 			</div>
 			<hr class="mt-4 px-0 col-sm-3 titleHR">
 		</div>
-		<h4 class="pt-4 px-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quaerat, blanditiis aut quasi, natus tempora deserunt totam eum doloremque ducimus numquam obcaecati repellat? Odit ab exercitationem beatae, laboriosam suscipit et! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quaerat, blanditiis aut quasi, natus tempora deserunt totam eum doloremque ducimus numquam obcaecati repellat? Odit ab exercitationem beatae, laboriosam suscipit et! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quaerat, blanditiis aut quasi, natus tempora deserunt totam eum doloremque ducimus numquam obcaecati repellat? Odit ab exercitationem beatae, laboriosam suscipit et!</h4>
+	</div>
+	<div class="achCard pb-2">
+		<div class="row">
+			<i class="fa fa-angle-left fa-3x align-self-center offset-sm-1 text-light pl-2" (click)="achDec()"></i>
+			<div class="col-md-4 achCardLeft offset-md-2" [style.background-image]="'url(/assets/images/'+title.image+')'"></div>
+			<div class="col-md-4 achCardRight text-center">
+				<h2 class="p-3">{{title.title}}<hr class="underlineHR"></h2> 
+				<h5 class="text-left">{{title.desc}}</h5>
+			</div>
+			<i class="fa fa-angle-right fa-3x align-self-center text-light mx-auto pr-2" (click)="achInc()"></i>
+		</div>
 	</div>
 </div>
+
+<style type="text/css">
+</style>

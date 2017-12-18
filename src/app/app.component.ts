@@ -30,8 +30,8 @@ let i : number = 1;
 export class AppComponent implements OnInit{
 	title : Title = TITLES[i];
 	ngOnInit() { 
-		animateCss('.centerCardLeft','bounceInLeft',null);
-		animateCss('.centerCardRight','bounceInRight', function () {
+		animateCss('.centerCardLeft','slideInLeft',null);
+		animateCss('.centerCardRight','slideInRight', function () {
 			$('.centerCardLeft, .centerCardRight').css('-webkit-animation-duration','0.2s');
 		});
 	}
@@ -57,13 +57,13 @@ export class AppComponent implements OnInit{
 	}
 
 	visibility_toggle(){
-		if (i==2) {
-			$('.fa-angle-right').css('visibility','hidden');
+		if (i==TITLES.length-1) {
+			$('.centerCard .fa-angle-right').css('visibility','hidden');
 		} else if (i==0) {
-			$('.fa-angle-left').css('visibility','hidden');
+			$('.centerCard .fa-angle-left').css('visibility','hidden');
 		} else {
-			$('.fa-angle-right').css('visibility','visible');
-			$('.fa-angle-left').css('visibility','visible');
+			$('.centerCard .fa-angle-right').css('visibility','visible');
+			$('.centerCard .fa-angle-left').css('visibility','visible');
 		}
 	}
 

@@ -1,6 +1,6 @@
 a, a:active, a:hover, a:focus, a:visited{color: black; text-decoration: none;}
 
-.row{margin: 0 !important}
+.row{margin-left: 0 !important; margin-right: 0 !important}
 nav {padding: 0rem 1rem !important}
 nav a {line-height: 32px; padding-left: 0.5rem !important}
 nav .active {background-color: red;}
@@ -11,6 +11,16 @@ nav .active {background-color: red;}
 .titleHR{
 	display: inline-block;
 	height: 0.2px
+}
+.underlineHR{
+	display: none;
+	margin: 0 auto;
+	width: 80%;
+	height: 1px;
+	background: linear-gradient(to right, transparent 0%, black 30%, black 70%, transparent 100%);
+}
+.underlineHR.inverse{
+	background: linear-gradient(to right, transparent 0%, white 30%, white 70%, transparent 100%);
 }
 .title{
 	display: inline;
@@ -27,7 +37,8 @@ nav .active {background-color: red;}
 	min-height: 50vh
 }
 .centerCardLeft, .centerCardRight {
-	-webkit-animation-duration: 1s;
+	-webkit-animation-duration: 0.7s;
+	animation-timing-function: ease-out;
 }
 .fa-angle-right,.fa-angle-left{cursor: pointer;}
 .fa-angle-left{position: absolute;z-index: 3}
@@ -43,7 +54,6 @@ nav .active {background-color: red;}
 #education .titleHR, 
 #experience .titleHR,
 #achievement .titleHR{background-color: white;}
-
 
 .tl:first-child > .timeline-item{border-image: linear-gradient(to bottom, transparent 7%, white 7%, white 100%) 1 100%; border-image-width: 0 0 0 2px}
 .tl:last-child > .timeline-item{border-image: linear-gradient(to bottom, white 0%, white 7%, transparent 7%, transparent 100%) 1 100%; border-image-width: 0 0 0 2px}
@@ -71,5 +81,6 @@ nav .active {background-color: red;}
 	.fa-angle-right{position: absolute; right: 0}
 	.fa-angle-right,.fa-angle-left{color: black !important}
 	.row .titleHR{display: none}
+	.underlineHR{ display: block; }
 	.tl{ visibility: visible; }
 }

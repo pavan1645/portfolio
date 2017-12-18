@@ -17,7 +17,7 @@ $(document).ready( function() {
 		smoothScroll(this.hash, navHeight);
 	});
 
-	$('.top').slick({
+	$('.techSlide').slick({
 		infinite: true,
 		autoplay: true,
 		autoplaySpeed: 2000,

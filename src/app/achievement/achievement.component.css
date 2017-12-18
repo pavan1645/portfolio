@@ -1,0 +1,15 @@
+#achievement{background: url('/assets/images/code_bg.jpg');}
+
+.achCardLeft, .achCardRight {
+	min-height: 60vh;
+	width: 100%;
+}
+.achCardLeft {
+	background-size: cover;
+	background-position: center;
+}
+.achCardRight { background-color: white; color: black }
+
+#achievement .achCardRight .underlineHR{
+	display: block;
+} 

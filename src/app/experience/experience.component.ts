@@ -5,7 +5,7 @@ import { Timeline } from '../timeline';
 
 const EXPERIENCES : Timeline[] = [
 {
-	year: "2014-18",
+	year: "2014 - 18",
 	title: "Web Developer - Myraa technologies",
 	desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\
@@ -15,7 +15,7 @@ const EXPERIENCES : Timeline[] = [
 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 },
 {
-	year: "2014-18",
+	year: "2014 - 18",
 	title: "Web Developer - Myraa technologies",
 	desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\
@@ -25,7 +25,7 @@ const EXPERIENCES : Timeline[] = [
 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 },
 {
-	year: "2014-18",
+	year: "2014 - 18",
 	title: "Web Developer - Myraa technologies",
 	desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\

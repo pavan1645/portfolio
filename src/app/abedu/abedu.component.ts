@@ -5,17 +5,17 @@ import { animateCss } from '../animate'
 
 const TIMELINE: Timeline[] = [
 {
-	year: "2014-18",
+	year: "2014 - 18",
 	title: "Bachelor of Technology",
 	desc: "Ramrao Adik Institute of Technology"
 },
 {
-	year: "2012-14",
+	year: "2012 - 14",
 	title: "Higher Secondary Certificate",
 	desc: "Uran Education Society"
 },
 {
-	year: "2002-12",
+	year: "2002 - 12",
 	title: "Secondary School Certificate",
 	desc: "St. Mary's Convent High School"
 }
