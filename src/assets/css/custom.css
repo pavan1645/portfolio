@@ -71,4 +71,5 @@ nav .active {background-color: red;}
 	.fa-angle-right{position: absolute; right: 0}
 	.fa-angle-right,.fa-angle-left{color: black !important}
 	.row .titleHR{display: none}
+	.tl{ visibility: visible; }
 }

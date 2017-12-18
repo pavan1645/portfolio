@@ -47,10 +47,14 @@ function heightChange() {
 }
 
 function navBgChange(height) {
-	if(height  > 300) {
+	if ($(this).width() < 768) {
 		$("nav").css('background','rgba(64, 64, 134,1)');
 	} else {
-		$("nav").css('background','rgba(64, 64, 134,'+height/300+')');
+		if(height  > 300) {
+			$("nav").css('background','rgba(64, 64, 134,1)');
+		} else {
+			$("nav").css('background','rgba(64, 64, 134,'+height/300+')');
+		}
 	}
 }
 

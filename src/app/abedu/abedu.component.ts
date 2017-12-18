@@ -36,14 +36,14 @@ export class AbeduComponent implements OnInit {
 		var oTopH = $('#education').height()+oTop;
 		var eduLoaded = false;
 		$(window).scroll(function(){
-			var pTop = $('body').scrollTop();
+		var pTop = $('body').scrollTop();
 			//console.log(pTop+"   "+oTop+"   "+oTopH);
 			if(pTop>oTop+100 && !eduLoaded && (pTop-oTopH+100<oTopH)){
 				$('#education .tl').css('visibility', 'visible');
 				animateCss('#education .tl', 'fadeInUp', null);
 				eduLoaded = true;
 			}
-		});
+		});		
 	}
 
 }
