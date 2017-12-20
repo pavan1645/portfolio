@@ -1,5 +1,5 @@
-<div id="work" class="vh100" style="">
-	<div id="particles-js" style="">
+<div id="work" class="vh100">
+	<div id="particles-js">
 	</div>
 	<div class="container py-4 text-center">
 		<div class="row">
@@ -12,16 +12,60 @@
 		<div class="pt-4 px-4">
 			<div class="row pb-3">
 				<div class="col-md-4 mb-2" *ngFor="let project of projects">
-					<a [href]="project.link" target="_blank">
+					<a (click)="openProject(project.link)" style="cursor: pointer;">
 						<div class="project_image text-left">
 							<img [src]="project.image" class="img-fluid">
 							<div class="overlay px-2 pt-3">
-								<h6 class="py-2 px-3 mr-2" *ngFor="let tag of project.tags">{{tag}}</h6>
+								<h6 class="py-2 px-3 mr-2 tag" *ngFor="let tag of project.tags">{{tag}}</h6>
 							</div>
 						</div>
 						<h4 class="pt-2 mb-0"><strong>{{project.title}}</strong></h4>
 					</a>
-					<h6>{{project.desc}}</h6>
+					<em><h6 [innerHTML]="project.desc"></h6></em>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="staticModal">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Static Web Projects</h5>
+						<button type="button" class="close" data-dismiss="modal">
+							<span>&times;</span>
+						</button>
+					</div>
+					<div class="modal-body text-left">
+						<div id="accordion">
+							<div class="card" *ngFor="let static of statics; let i=index">
+								<a data-toggle="collapse" [href]="'#collapse'+i">
+									<div class="card-header">
+										<h5 class="mb-0">
+											{{static.title}}
+										</h5>
+									</div>
+								</a>
+								<div [id]="'collapse'+i" class="collapse" data-parent="#accordion">
+									<div class="card-body row">
+										<div class="col-md-9">
+											<p>
+												{{static.desc}} <br>
+												<span>
+													<a target="_blank" class="text-info" [href]="static.link">
+														{{static.link}}
+													</a>
+												</span>
+											</p>
+											<h6><strong>Tags :</strong></h6>
+											<h6 class="py-1 px-2 mr-1 tag" *ngFor="let tag of static.tags" style="background-color: grey">{{tag}}</h6>
+										</div>
+										<div class="col-md-3">
+											<img [src]="static.image" class="img-fluid">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
