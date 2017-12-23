@@ -6,17 +6,17 @@ import { animateCss } from '../animate'
 const TIMELINE: Timeline[] = [
 {
 	year: "2014 - 18",
-	title: "Bachelor of Technology",
-	desc: "Ramrao Adik Institute of Technology"
+	title: "Bachelor of Engineering - 66% (CGPA: 7.25)",
+	desc: "Ramrao Adik Institute of Technology - Department of Information Technology"
 },
 {
 	year: "2012 - 14",
-	title: "Higher Secondary Certificate",
+	title: "Higher Secondary Certificate - 74.46%",
 	desc: "Uran Education Society"
 },
 {
 	year: "2002 - 12",
-	title: "Secondary School Certificate",
+	title: "Secondary School Certificate - 81.09%",
 	desc: "St. Mary's Convent High School"
 }
 ]

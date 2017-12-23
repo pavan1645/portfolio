@@ -28,7 +28,7 @@
 			<div class="col-md-4 achCardLeft offset-md-2" [style.background-image]="'url(/assets/images/'+title.image+')'"></div>
 			<div class="col-md-4 achCardRight text-center">
 				<h2 class="p-3">{{title.title}}<hr class="underlineHR"></h2> 
-				<h5 class="text-left">{{title.desc}}</h5>
+				<h5 class="text-left" [innerHTML]="title.desc"></h5>
 			</div>
 			<i class="fa fa-angle-right fa-3x align-self-center text-light mx-auto pr-2" (click)="achInc()"></i>
 		</div>

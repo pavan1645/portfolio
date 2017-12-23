@@ -20,6 +20,11 @@
 	display: inline-block;
 }
 
+#accordion .card-header{
+	background-color: #404086;
+	color: white
+}
+
 #particles-js{
 	position: absolute;
 	width: 100%;

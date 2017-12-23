@@ -5,34 +5,31 @@ import { Timeline } from '../timeline';
 
 const EXPERIENCES : Timeline[] = [
 {
-	year: "2014 - 18",
-	title: "Web Developer - Myraa technologies",
-	desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+	year: "Jun '17 - Aug '17",
+	title: "Myraa Technologies - Frontend Developer",
+	desc: "Worked as a full-time Frontend Developer with Myraa Technologies - \
+	An Artificial Intelligence and Machine Learning specialist startup, during the vacations of June 2017. \
+	Worked on multiple projects simultaneously using different frontend technologies. <br /> \
+	Some noteworthy projects included frontend as well as backend integration handling of various ML & AI Products \
+	like Regex Classifier, SmartPlug, Invoice 2 JSON, Flowchart Parser, Ad Banner Recommender, etc. \
+	Also, helped in Full Stack Development of ArtBrowser - An eCommerce website for selling Artworks."
 },
 {
-	year: "2014 - 18",
-	title: "Web Developer - Myraa technologies",
-	desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+	year: "Feb '17 - May '17",
+	title: "Tata Consultancy Services - Project Trainee",
+	desc: "Was part of an intensive 12-week remote internship program with TCS. \
+	The program was initiated by our college with a vision to provide hands-on industrial training and \
+	experience to the students. It also included working and completing a project within the stipulated time frame. <br>\
+	I worked in a team, on an Android App development project which included database connectivity. \
+	The internship also required us to weekly update our mentors with the progress."
 },
 {
-	year: "2014 - 18",
-	title: "Web Developer - Myraa technologies",
-	desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+	year: "Mar '16 - Aug '16",
+	title: "Internshala - Internshala Student Partner",
+	desc: "Worked as a campus brand ambassador for Internshala - An internship providing platform for students. \
+	Promoted Internshala and its internships and also its various virtual training courses available for students. \
+	The internship also included promoting the brand throughout various classes and tuitions in my locality. <br>\
+	Learned various marketing techniques of brand promotion and also sharpened my communication skills."
 },
 ]
 

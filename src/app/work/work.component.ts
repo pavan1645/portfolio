@@ -30,15 +30,8 @@ const STATICS: Project[] = [
 	title:"Myraa Dashboard",
 	desc:"Dashboard developed for Myraa Technologies along with its individual product pages and backend integration.",
 	image:"/assets/images/code_bg.jpg",
-	link:"http://myraatechnologies.com/DB/dashboard.html",
+	link:"http://www.myraatechnologies.com/DB/dashboard.html",
 	tags:["HTML","CSS","jQuery","Bootstrap"]
-},
-{
-	title:"ArtBrowser",
-	desc:"An e-commerce website for buying and selling artworks.",
-	image:"/assets/images/code_bg.jpg",
-	link:"http://www.artbrowserapp.com/",
-	tags:["HTML","CSS","jQuery","Bootstrap","Python","MySQL"]
 }
 ]
 
@@ -79,11 +72,11 @@ const PROJECTS: Project[] = [
 	tags:["HTML","CSS","Javascript","jQuery","Howler.js","Paper.js"]
 },
 {
-	title:"Coming Soon",
-	desc:"Stay tuned for updates",
+	title:"ArtBrowser",
+	desc:"An e-commerce website for buying and selling artworks.",
 	image:"/assets/images/code_bg.jpg",
-	link:"#",
-	tags:["..."]
+	link:"http://www.artbrowserapp.com/",
+	tags:["HTML","CSS","jQuery","Bootstrap","Python","MySQL"]
 }
 ]
 

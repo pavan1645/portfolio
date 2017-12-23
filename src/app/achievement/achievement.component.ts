@@ -10,21 +10,41 @@ const TECHS = ["/assets/images/temp_photo.jpg","/assets/images/code_bg.jpg","/as
 const TITLES: Title[] = [
 {
 	title:"Bitcamp 2017",
-	desc:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat nesciunt ut reprehenderit unde. Explicabo deleniti excepturi possimus ipsam ea mollitia quisquam ducimus quaerat doloribus distinctio autem odit, labore, inventore magni?",
+	desc:"Won 1st prize in Bitcamp 2017, A 24-hour hackathon organized by Computer Society of India (CSI), RAIT. ",
 	image:"temp_photo.jpg"
 },
 {
-	title:"Hackerrank May 2017",
-	desc:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat nesciunt ut reprehenderit unde. Explicabo deleniti excepturi possimus ipsam ea mollitia quisquam ducimus quaerat doloribus distinctio autem odit, labore, inventore magni?",
+	title:"President of ITSA",
+	desc:"Became the President of Information Technology Students' Association (ITSA, RAIT) for the \
+	academic year 2016-17.<br> ITSA is the official student committee of IT Department which \
+	organizes various workshops, summers and winter training programmes, technical fests, \
+	seminars and informative lectures from experts for the students of IT Department.",
 	image:"temp_photo.jpg"
 },
 {
-	title:"Hackerearth June 2017",
-	desc:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat nesciunt ut reprehenderit unde. Explicabo deleniti excepturi possimus ipsam ea mollitia quisquam ducimus quaerat doloribus distinctio autem odit, labore, inventore magni?",
-	image:"code_bg.jpg"
+	title:"Sponsorship co-Head ITSA",
+	desc:"Managed sponsorship related activities for ITSA, RAIT. Also managed collaborations \
+	activities of sponsors and trained other members in the field of marketing.",
+	image:"temp_photo.jpg"
+},
+{
+	title:"Abacus",
+	desc:"<ul>\
+		<li>Ranked 3rd in State Level Abacus Competition, organized by Ideal Play Abacus Pvt. Ltd., 2007</li>\
+		<li>Passed with Distinction in International Standard of \
+		Abacus Mental Arithmetic Proficiency Examination organized by \
+		The GuangXi Zhusuan Association, China, 2007</li>\
+	</ul>",
+	image:"temp_photo.jpg"
+},
+{
+	title:"National Karate Championship",
+	desc:"Received Certificate of Merit for Participating in 8th National Karate Championship \
+	at Haryana hosted by Karate-Do-Association of Haryana (July 2004)",
+	image:"temp_photo.jpg"
 }
 ];
-let i : number = 1;
+let i : number = 0;
 
 @Component({
 	selector: 'app-achievement',
@@ -38,6 +58,7 @@ export class AchievementComponent implements OnInit {
 
 	ngOnInit() {
 		$('.achCardLeft, .achCardRight').css('-webkit-animation-duration','0.2s');
+		this.visibility_toggle();
 	}
 
 

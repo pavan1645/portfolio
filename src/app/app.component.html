@@ -39,9 +39,8 @@
 		[style.background-image]="'url(../assets/images/'+title.image+')'"></div>
 		<div class="centerCardRight col-md-4 offset-md-0 col-sm-10 offset-sm-1 bg-light d-flex flex-row animated">
 			<div class="flex-column">
-				<h2 class="text-center pt-4">{{title.title}}</h2>
-				<hr>
-				<p class="text-justify">{{title.desc}}</p>
+				<h2 class="text-center pt-4">{{title.title}}<hr class="underlineHR"></h2>
+				<p class="text-justify pt-3">{{title.desc}}</p>
 			</div>
 		</div>
 		<i class="fa fa-angle-right fa-3x align-self-center text-light mx-auto pr-2" (click)="inc()"></i>
