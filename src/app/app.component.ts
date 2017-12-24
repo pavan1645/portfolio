@@ -5,27 +5,27 @@ import { animateCss } from './animate'
 
 const SOCIAL = [
 {
-	icon: "/assets/images/code_bg.jpg",
+	icon: "/assets/images/facebook.png",
 	link: "https://www.facebook.com/dashing0pavan"
 },
 {
-	icon: "/assets/images/code_bg.jpg",
+	icon: "/assets/images/instagram.png",
 	link: "https://www.facebook.com/dashing0pavan"
 },
 {
-	icon: "/assets/images/code_bg.jpg",
+	icon: "/assets/images/github.png",
 	link: "https://www.facebook.com/dashing0pavan"
 },
 {
-	icon: "/assets/images/code_bg.jpg",
+	icon: "/assets/images/hackerrank.png",
 	link: "https://www.facebook.com/dashing0pavan"
 },
 {
-	icon: "/assets/images/code_bg.jpg",
+	icon: "/assets/images/hackerearth.png",
 	link: "https://www.facebook.com/dashing0pavan"
 },
 {
-	icon: "/assets/images/code_bg.jpg",
+	icon: "/assets/images/codechef.png",
 	link: "https://www.facebook.com/dashing0pavan"
 }
 ]

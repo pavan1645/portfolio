@@ -33,10 +33,10 @@
 		</div>
 	</nav>
 
-	<div class="col-md-8 offset-md-2 p-0 mb-1 mb-md-0" style="margin-top: auto;">
-		<div class="card text-center" style="background-color: transparent;">
+	<div class="col-md-8 offset-md-2 p-0" style="margin-top: auto;">
+		<div class="card text-center" style="">
 			<div class="row vh60">
-				<div class="col-md-7 centerCardDetails p-md-4 p-2 text-left" style="background-color: #404086">
+				<div class="col-sm-7 centerCardDetails p-md-4 p-2 text-left" style="">
 					<h2 class="mb-0 text-light">Pavankumar Mahadik</h2>
 					<h4 class="text-gold mb-4"><small>Web and Android Developer<hr class="underlineHR inverse left"></small></h4>
 					<h5 *ngFor="let detail of details">
@@ -45,13 +45,13 @@
 						<span class="text-gold">{{detail.desc}}</span>
 					</h5>
 				</div>
-				<div class="col-md-5 p-0 centerCardPhoto" style="">
+				<div class="col-sm-5 p-0 centerCardPhoto" style="">
 					<div id="triangle"></div>
 				</div>
 			</div>
-			<div class="row bg-light socialIcons text-purple">
-				<a class="col-2" [href]="social.link" *ngFor="let social of socials" target="_blank" style="border-right: 1px solid #404086">
-					<img [src]="social.icon" class="img-fluid">
+			<div class="row socialIcons text-purple">
+				<a class="col-2 social" [href]="social.link" *ngFor="let social of socials" target="_blank">
+					<img [src]="social.icon" class="img-fluid p-1 p-md-2">
 				</a>
 			</div>
 		</div>
@@ -66,9 +66,5 @@
 </div>
 
 <style type="text/css">
-.socialIcons a:hover{
-	background-color: #cd9933;
-	color: white;
-	transition: background-color 0.4s ease;
-}
+
 </style>
