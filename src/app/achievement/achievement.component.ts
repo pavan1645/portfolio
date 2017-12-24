@@ -69,6 +69,7 @@ export class AchievementComponent implements OnInit {
 	achInc() {
 		this.animate("Right");
 		++i;
+		console.log("r"+i);
 		this.visibility_toggle();
 		this.title = TITLES[i];
 	}
@@ -76,6 +77,7 @@ export class AchievementComponent implements OnInit {
 	achDec() {
 		this.animate("Left");
 		--i;
+		console.log("l"+i);
 		this.visibility_toggle();
 		this.title = TITLES[i];
 	}

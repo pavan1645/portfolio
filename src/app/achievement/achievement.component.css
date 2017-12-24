@@ -12,3 +12,4 @@
 .achCardRight .underlineHR{
 	display: block;
 } 
+.fa-angle-left,.fa-angle-right { cursor: pointer; width: auto; }
