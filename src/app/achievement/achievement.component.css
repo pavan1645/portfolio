@@ -1,4 +1,8 @@
-#achievement{background: url('/assets/images/code_bg.jpg');}
+#achievement{
+	background: url('/assets/images/ach_bg.jpg');
+	background-size: cover;
+	background-position: top center;
+}
 
 .achCardLeft, .achCardRight {
 	min-height: 60vh;

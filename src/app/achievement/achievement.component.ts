@@ -4,28 +4,28 @@ import $ from 'jquery';
 import { animateCss } from '../animate'
 
 const TECHS = [
-"/assets/images/tech/java.png",
-"/assets/images/tech/android.png",
-"/assets/images/tech/html.png",
-"/assets/images/tech/css.png",
-"/assets/images/tech/js.png",
-"/assets/images/tech/jquery.png",
-"/assets/images/tech/bootstrap.png",
-"/assets/images/tech/nodejs.png",
-"/assets/images/tech/angular.png",
-"/assets/images/tech/mongodb.png",
-"/assets/images/tech/mysql.png",
-"/assets/images/tech/heroku.png",
-"/assets/images/tech/git.png",
-"/assets/images/tech/ubuntu.png",
-"/assets/images/tech/photoshop.png",
+"java.png",
+"android.png",
+"html.png",
+"css.png",
+"js.png",
+"jquery.png",
+"bootstrap.png",
+"nodejs.png",
+"angular.png",
+"mongodb.png",
+"mysql.png",
+"heroku.png",
+"git.png",
+"ubuntu.png",
+"photoshop.png",
 ];
 
 const TITLES: Title[] = [
 {
 	title:"Bitcamp 2017",
 	desc:"Won 1st prize in Bitcamp 2017, A 24-hour hackathon organized by Computer Society of India (CSI), RAIT. ",
-	image:"temp_photo.jpg"
+	image:"bitcamp.jpg"
 },
 {
 	title:"President of ITSA",
@@ -33,13 +33,13 @@ const TITLES: Title[] = [
 	academic year 2016-17.<br> ITSA is the official student committee of IT Department which \
 	organizes various workshops, summers and winter training programmes, technical fests, \
 	seminars and informative lectures from experts for the students of IT Department.",
-	image:"temp_photo.jpg"
+	image:"president.jpg"
 },
 {
 	title:"Sponsorship co-Head ITSA",
 	desc:"Managed sponsorship related activities for ITSA, RAIT. Also managed collaborations \
 	activities of sponsors and trained other members in the field of marketing.",
-	image:"temp_photo.jpg"
+	image:"sponsorship.jpg"
 },
 {
 	title:"Abacus",
@@ -49,13 +49,13 @@ const TITLES: Title[] = [
 		Abacus Mental Arithmetic Proficiency Examination organized by \
 		The GuangXi Zhusuan Association, China, 2007</li>\
 	</ul>",
-	image:"temp_photo.jpg"
+	image:"abacus.jpg"
 },
 {
 	title:"National Karate Championship",
 	desc:"Received Certificate of Merit for Participating in 8th National Karate Championship \
 	at Haryana hosted by Karate-Do-Association of Haryana (July 2004)",
-	image:"temp_photo.jpg"
+	image:"karate.jpg"
 }
 ];
 let i : number = 0;

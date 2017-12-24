@@ -7,7 +7,7 @@
 		<hr class="mt-4 px-0 col-sm-3 titleHR">
 		<div class="row pt-4 techSlide" style="width: 100%">
 			<div class="col-sm-3" *ngFor="let tech of techs">
-				<img [src]="tech" class="img-fluid">
+				<img [src]="'/assets/images/tech/'+tech" class="img-fluid">
 			</div>
 		</div>
 	</div>
@@ -25,7 +25,7 @@
 	<div class="achCard pb-2">
 		<div class="row">
 			<i class="fa fa-angle-left fa-3x align-self-center pl-2 col-md-1 offset-md-1" (click)="achDec()"></i>
-			<div class="col-md-4 achCardLeft" [style.background-image]="'url(/assets/images/'+title.image+')'"></div>
+			<div class="col-md-4 achCardLeft" [style.background-image]="'url(/assets/images/ach/'+title.image+')'"></div>
 			<div class="col-md-4 achCardRight text-center">
 				<h2 class="p-3">{{title.title}}<hr class="underlineHR"></h2> 
 				<h5 class="text-left" [innerHTML]="title.desc"></h5>
