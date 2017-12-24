@@ -3,24 +3,60 @@ import { Title } from './title';
 import $ from 'jquery';
 import { animateCss } from './animate'
 
-const TITLES: Title[] = [
+const SOCIAL = [
 {
-	title:"Android Developer",
-	desc:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat nesciunt ut reprehenderit unde. Explicabo deleniti excepturi possimus ipsam ea mollitia quisquam ducimus quaerat doloribus distinctio autem odit, labore, inventore magni?",
-	image:"temp_photo.jpg"
+	icon: "/assets/images/code_bg.jpg",
+	link: "https://www.facebook.com/dashing0pavan"
 },
 {
-	title:"Web Developer",
-	desc:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat nesciunt ut reprehenderit unde. Explicabo deleniti excepturi possimus ipsam ea mollitia quisquam ducimus quaerat doloribus distinctio autem odit, labore, inventore magni?",
-	image:"temp_photo.jpg"
+	icon: "/assets/images/code_bg.jpg",
+	link: "https://www.facebook.com/dashing0pavan"
 },
 {
-	title:"Photographer",
-	desc:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat nesciunt ut reprehenderit unde. Explicabo deleniti excepturi possimus ipsam ea mollitia quisquam ducimus quaerat doloribus distinctio autem odit, labore, inventore magni?",
-	image:"code_bg.jpg"
+	icon: "/assets/images/code_bg.jpg",
+	link: "https://www.facebook.com/dashing0pavan"
+},
+{
+	icon: "/assets/images/code_bg.jpg",
+	link: "https://www.facebook.com/dashing0pavan"
+},
+{
+	icon: "/assets/images/code_bg.jpg",
+	link: "https://www.facebook.com/dashing0pavan"
+},
+{
+	icon: "/assets/images/code_bg.jpg",
+	link: "https://www.facebook.com/dashing0pavan"
 }
-];
-let i : number = 1;
+]
+const DETAILS = [
+{
+	title: "Age",
+	desc: "21",
+	icon: "fa-user"
+},
+{
+	title: "Email",
+	desc: "pavan1645@gmail.com",
+	icon: "fa-envelope"
+},
+{
+	title: "Phone",
+	desc: "+91 8082160741",
+	icon: "fa-phone"
+},
+{
+	title: "Address",
+	desc: "Kamothe, Navi Mumbai",
+	icon: "fa-map-marker"
+},
+{
+	title: "Website",
+	desc: "pavanmahadik.herokuapp.com",
+	icon: "fa-globe"
+}
+]
+
 @Component({
 	selector: 'app-root',
 	templateUrl: './app.component.html',
@@ -28,43 +64,13 @@ let i : number = 1;
 })
 
 export class AppComponent implements OnInit{
-	title : Title = TITLES[i];
+	socials = SOCIAL;
+	details = DETAILS;
 	ngOnInit() { 
-		animateCss('.centerCardLeft','slideInLeft',null);
-		animateCss('.centerCardRight','slideInRight', function () {
-			$('.centerCardLeft, .centerCardRight').css('-webkit-animation-duration','0.2s');
-		});
+		//animateCss('.centerCardLeft','bounceInLeft',null);
+		//animateCss('.centerCardRight','bounceInRight', null);
+		animateCss('.centerCardPhoto, .centerCardDetails','bounceInDown',null);
+		animateCss('.socialIcons','slideInUp',null);
 	}
 	constructor(){	}
-
-
-	animate(direction : String){
-		animateCss('.centerCardLeft, .centerCardRight','fadeIn' + direction, null);
-	}
-
-	inc(){
-		this.animate("Right");
-		i++;
-		this.visibility_toggle();
-		this.title = TITLES[i];
-	}
-
-	dec(){
-		this.animate("Left");
-		i--;
-		this.visibility_toggle();
-		this.title = TITLES[i];	
-	}
-
-	visibility_toggle(){
-		if (i==TITLES.length-1) {
-			$('.centerCard .fa-angle-right').css('visibility','hidden');
-		} else if (i==0) {
-			$('.centerCard .fa-angle-left').css('visibility','hidden');
-		} else {
-			$('.centerCard .fa-angle-right').css('visibility','visible');
-			$('.centerCard .fa-angle-left').css('visibility','visible');
-		}
-	}
-
 }

@@ -1,4 +1,4 @@
-<div id="hero" class="d-flex flex-column vh100">
+<div id="hero" class="d-flex vh100">
 
 	<nav id="navbar" class="navbar navbar-expand-lg fixed-top px-0">
 		<a class="navbar-brand justify-content-start pl-4" href="#">Pavankumar Mahadik</a>
@@ -33,17 +33,28 @@
 		</div>
 	</nav>
 
-	<div class="centerCard row vh75" style="">
-		<i class="fa fa-angle-left fa-3x align-self-center offset-sm-1 text-light pl-2" (click)="dec()"></i>
-		<div class="centerCardLeft col-md-4 col-sm-10 d-flex align-items-center offset-md-2 offset-sm-1 animated"
-		[style.background-image]="'url(../assets/images/'+title.image+')'"></div>
-		<div class="centerCardRight col-md-4 offset-md-0 col-sm-10 offset-sm-1 bg-light d-flex flex-row animated">
-			<div class="flex-column">
-				<h2 class="text-center pt-4">{{title.title}}<hr class="underlineHR"></h2>
-				<p class="text-justify pt-3">{{title.desc}}</p>
+	<div class="col-md-8 offset-md-2 p-0 mb-1 mb-md-0" style="margin-top: auto;">
+		<div class="card text-center" style="background-color: transparent;">
+			<div class="row vh60">
+				<div class="col-md-7 centerCardDetails p-md-4 p-2 text-left" style="background-color: #404086">
+					<h2 class="mb-0 text-light">Pavankumar Mahadik</h2>
+					<h4 class="text-gold mb-4"><small>Web and Android Developer<hr class="underlineHR inverse left"></small></h4>
+					<h5 *ngFor="let detail of details">
+						<i class="mt-2 mx-2 fa fa-fw text-gold" [ngClass]="detail.icon"></i>
+						<span class="text-light font-weight-bold">{{detail.title}} :</span>
+						<span class="text-gold">{{detail.desc}}</span>
+					</h5>
+				</div>
+				<div class="col-md-5 p-0 centerCardPhoto" style="">
+					<div id="triangle"></div>
+				</div>
+			</div>
+			<div class="row bg-light socialIcons text-purple">
+				<a class="col-2" [href]="social.link" *ngFor="let social of socials" target="_blank" style="border-right: 1px solid #404086">
+					<img [src]="social.icon" class="img-fluid">
+				</a>
 			</div>
 		</div>
-		<i class="fa fa-angle-right fa-3x align-self-center text-light mx-auto pr-2" (click)="inc()"></i>
 	</div>
 </div>
 <div>
@@ -53,3 +64,11 @@
 	<app-achievement></app-achievement>
 	<app-contact></app-contact>
 </div>
+
+<style type="text/css">
+.socialIcons a:hover{
+	background-color: #cd9933;
+	color: white;
+	transition: background-color 0.4s ease;
+}
+</style>
