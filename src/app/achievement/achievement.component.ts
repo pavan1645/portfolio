@@ -3,9 +3,23 @@ import { Title } from '../title';
 import $ from 'jquery';
 import { animateCss } from '../animate'
 
-const TECHS = ["/assets/images/temp_photo.jpg","/assets/images/code_bg.jpg","/assets/images/temp_photo.jpg",
-"/assets/images/code_bg.jpg","/assets/images/temp_photo.jpg","/assets/images/code_bg.jpg",
-"/assets/images/temp_photo.jpg","/assets/images/code_bg.jpg","/assets/images/temp_photo.jpg"];
+const TECHS = [
+"/assets/images/tech/java.png",
+"/assets/images/tech/android.png",
+"/assets/images/tech/html.png",
+"/assets/images/tech/css.png",
+"/assets/images/tech/js.png",
+"/assets/images/tech/jquery.png",
+"/assets/images/tech/bootstrap.png",
+"/assets/images/tech/nodejs.png",
+"/assets/images/tech/angular.png",
+"/assets/images/tech/mongodb.png",
+"/assets/images/tech/mysql.png",
+"/assets/images/tech/heroku.png",
+"/assets/images/tech/git.png",
+"/assets/images/tech/ubuntu.png",
+"/assets/images/tech/photoshop.png",
+];
 
 const TITLES: Title[] = [
 {
