@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Timeline } from '../timeline'
 import $ from 'jquery';
 import { animateCss } from '../animate'
+import { onScreen } from '../onScreen'
 
 const TIMELINE: Timeline[] = [
 {
@@ -31,14 +32,9 @@ export class AbeduComponent implements OnInit {
 	constructor() { }
 
 	ngOnInit() {
-		//Calculated vals, don't mess! Lower bottom works only with md devices
-		var oTop = $('#education').offset().top - window.innerHeight;
-		var oTopH = $('#education').height()+oTop;
 		var eduLoaded = false;
 		$(window).scroll(function(){
-		var pTop = $('body').scrollTop();
-			//console.log(pTop+"   "+oTop+"   "+oTopH);
-			if(pTop>oTop+100 && !eduLoaded && (pTop-oTopH+100<oTopH)){
+			if(onScreen('#education') && !eduLoaded){
 				$('#education .tl').css('visibility', 'visible');
 				animateCss('#education .tl', 'fadeInUp', null);
 				eduLoaded = true;

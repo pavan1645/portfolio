@@ -14,14 +14,14 @@ $(document).ready( function() {
 	$('body').scrollspy({offset : navHeight});
 	
 	$('nav a').on('click',function(event) {
-		smoothScroll(this.hash, navHeight);
+		smoothScroll(this.hash, navHeight-10);
 	});
 
 	$('.techSlide').slick({
 		infinite: true,
 		autoplay: true,
-		autoplaySpeed: 2000,
-		slidesToShow: 8,
+		autoplaySpeed: 1000,
+		slidesToShow: 12,
 		slidesToScroll: 1,
 		adaptiveHeight: true,
 		arrows: false,
@@ -29,11 +29,15 @@ $(document).ready( function() {
 		{
 			breakpoint: 768,
 			settings: {
-				slidesToShow: 3
+				slidesToShow: 4
 			}
 		}
 		]
 	});
+	
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	})
 });
 
 function heightChange() {

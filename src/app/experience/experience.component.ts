@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import $ from 'jquery';
 import { animateCss } from '../animate';
 import { Timeline } from '../timeline';
+import { onScreen } from '../onScreen';
 
 const EXPERIENCES : Timeline[] = [
 {
@@ -43,19 +44,14 @@ export class ExperienceComponent implements OnInit {
 	constructor() { }
 
 	ngOnInit() {
-	  	//Calculated vals, don't mess! Lower bottom works only with md devices
-	  	var oTop = $('#experience').offset().top - window.innerHeight;
-	  	var oTopH = $('#experience').height()+oTop;
 	  	var eduLoaded = false;
-	  	$(window).scroll(function(){
-	  		var pTop = $('body').scrollTop();
-			//console.log(pTop+"   "+oTop+"   "+oTopH);
-			if(pTop>oTop+200 && !eduLoaded){
+		$(window).scroll(function(){
+			if(onScreen('#experience') && !eduLoaded){
 				$('#experience .tl').css('visibility', 'visible');
 				animateCss('#experience .tl', 'fadeInUp', null);
 				eduLoaded = true;
 			}
 		});
-	  }
-
 	}
+
+}

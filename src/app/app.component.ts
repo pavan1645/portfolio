@@ -6,27 +6,27 @@ import { animateCss } from './animate'
 const SOCIAL = [
 {
 	icon: "/assets/images/facebook.png",
-	link: "https://www.facebook.com/dashing0pavan"
+	link: "https://www.facebook.com/pavan1645"
 },
 {
 	icon: "/assets/images/instagram.png",
-	link: "https://www.facebook.com/dashing0pavan"
+	link: "https://www.instagram.com/pavan79/"
 },
 {
 	icon: "/assets/images/github.png",
-	link: "https://www.facebook.com/dashing0pavan"
+	link: "https://github.com/pavan1645"
 },
 {
 	icon: "/assets/images/hackerrank.png",
-	link: "https://www.facebook.com/dashing0pavan"
+	link: "https://www.hackerrank.com/pavan1645"
 },
 {
 	icon: "/assets/images/hackerearth.png",
-	link: "https://www.facebook.com/dashing0pavan"
+	link: "https://www.hackerearth.com/@pavan1645"
 },
 {
 	icon: "/assets/images/codechef.png",
-	link: "https://www.facebook.com/dashing0pavan"
+	link: "https://www.codechef.com/users/pavan1645"
 }
 ]
 const DETAILS = [

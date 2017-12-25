@@ -2,6 +2,8 @@
 a, a:active, a:hover, a:focus, a:visited{color: black; text-decoration: none;}
 .text-purple{color: #404086}
 .text-gold{color: #e9a92b}
+.bg-purple{background-color: #404086}
+.bg-gold{background-color: #e9a92b}
 
 .row{margin-left: 0 !important; margin-right: 0 !important}
 nav {padding: 0rem 1rem !important;}
