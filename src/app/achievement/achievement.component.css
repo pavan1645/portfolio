@@ -3,10 +3,10 @@
 	background-size: cover;
 	background-position: top center;
 }
-
 .achCardLeft, .achCardRight {
 	min-height: 60vh;
 	width: 100%;
+	box-shadow: 0px 2px 1px black;
 }
 .achCardLeft {
 	background-size: cover;
