@@ -14,7 +14,7 @@
 				<div class="col-md-4 mb-2" *ngFor="let project of projects">
 					<a (click)="openProject(project.link)" style="cursor: pointer;">
 						<div class="project_image text-left">
-							<img [src]="project.image" class="img-fluid">
+							<img [src]="'/assets/images/'+project.image" class="img-fluid border">
 							<div class="overlay px-2 pt-3">
 								<h6 class="py-2 px-3 mr-2 tag" *ngFor="let tag of project.tags">{{tag}}</h6>
 							</div>
@@ -59,7 +59,7 @@
 											<h6 class="py-1 px-2 mr-1 tag" *ngFor="let tag of static.tags" style="background-color: grey">{{tag}}</h6>
 										</div>
 										<div class="col-md-3">
-											<img [src]="static.image" class="img-fluid">
+											<img [src]="'/assets/images/'+static.image" class="img-fluid">
 										</div>
 									</div>
 								</div>

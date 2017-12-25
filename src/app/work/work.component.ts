@@ -8,28 +8,28 @@ const STATICS: Project[] = [
 {
 	title:"Patatap Clone",
 	desc:"A sound on keypress generation app.",
-	image:"/assets/images/patatap.png",
+	image:"patatap.png",
 	link:"https://pavan-static.herokuapp.com/patatap/",
 	tags:["HTML","CSS","Javascript","Howler.js","Paper.js"]
 },
 {
 	title:"ITSA RAIT Website",
 	desc:"College committee website.",
-	image:"/assets/images/itsa.png",
+	image:"itsa.png",
 	link:"https://pavan-static.herokuapp.com/itsa/",
 	tags:["HTML","CSS","Bootstrap"]
 },
 {
 	title:"TODO List",
 	desc:"A static todo list app.",
-	image:"/assets/images/todo.png",
+	image:"todo.png",
 	link:"https://pavan-static.herokuapp.com/todo/",
 	tags:["HTML","CSS","jQuery"]
 },
 {
 	title:"Myraa Dashboard",
 	desc:"Dashboard developed for Myraa Technologies along with its individual product pages and backend integration.",
-	image:"/assets/images/dashboard.png",
+	image:"dashboard.png",
 	link:"http://www.myraatechnologies.com/DB/dashboard.html",
 	tags:["HTML","CSS","jQuery","Bootstrap"]
 }
@@ -39,42 +39,42 @@ const PROJECTS: Project[] = [
 {
 	title:"Yelpcamp",
 	desc:"Campground rating website",
-	image:"/assets/images/yelpcamp.png",
-	link:"https://pavan-yelpcamp.herokuapp.com/",
+	image:"yelpcamp.png",
+	link:"https://github.com/pavan1645/YelpCamp",
 	tags:["Node.js","Express","Mongo","Passport.js","ejs"]
 },
 {
 	title:"VR Maps",
 	desc:"VR tour of our college - A Final Year Project",
-	image:"/assets/images/vrmaps.png",
+	image:"vrmaps.png",
 	link:"https://vrmaps.herokuapp.com/",
 	tags:["HTML","CSS","Javascript","Node.js","MongoDB"]
 },
 {
 	title:"Contact List",
 	desc:"MEAN app for performing CRUD operations on Contacts",
-	image:"/assets/images/contactlist.png",
-	link:"https://contact-list-mean.herokuapp.com/",
+	image:"contactlist.png",
+	link:"https://github.com/pavan1645/contact-list-mean",
 	tags:["Mongo","Express","Angular","Node.js"]
 },
 {
 	title:"Weight on Planet",
 	desc:"A simple app which calculates weights of objects on different planets",
-	image:"/assets/images/code_bg.jpg",
+	image:"code_bg.jpg",
 	link:"https://github.com/pavan1645/Weight-on-Planet",
 	tags:["Android", "Java"]
 },
 {
 	title:"Static Websites",
 	desc:"A bunch of static web projects",
-	image:"/assets/images/static.png",
+	image:"static.png",
 	link:"static",
 	tags:["HTML","CSS","Javascript","jQuery","Howler.js","Paper.js"]
 },
 {
 	title:"ArtBrowser",
 	desc:"An e-commerce website for buying and selling artworks.",
-	image:"/assets/images/artbrowser.png",
+	image:"artbrowser.png",
 	link:"http://www.artbrowserapp.com/",
 	tags:["HTML","CSS","jQuery","Bootstrap","Python","MySQL"]
 }
