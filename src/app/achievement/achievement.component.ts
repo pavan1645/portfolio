@@ -77,6 +77,7 @@ export class AchievementComponent implements OnInit {
 		for (var i = 0; i < TITLES.length; ++i) {
 			content += "url('/assets/images/ach/"+TITLES[i].image+"') ";
 		}
+		content += "url('/assets/images/card_profile.jpg') ";
 		$( "<style>body:after { position:absolute; width:0; height:0; overflow:hidden; z-index:-1; \
 		 content: " + content + "; }</style>" ).appendTo( "body" )
 	}
