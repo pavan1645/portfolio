@@ -11,11 +11,11 @@ function loadbar() {
 	var img = document.images, c = 0;
 	var tot = img.length;
 	var prog = document.getElementById('loaderBar');
-	prog.style.width = 0;
 	var stat = document.getElementById('percent');
 	function imgLoaded(){
 		c += 1;
 		var perc = ((100/tot*c) << 0) +"%";
+		prog.style.height = "0.1rem";
 		prog.style.width = perc;
 		//console.log(perc);
 		stat.innerHTML = "Loading "+ perc;
