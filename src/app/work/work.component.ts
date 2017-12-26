@@ -91,10 +91,10 @@ export class WorkComponent implements OnInit {
 	constructor() { }
 
 	ngOnInit() {
-		$('#collapse0').addClass('show');
 	}
 
 	openProject(link: string){
+		if(!$('#collapse0').hasClass('show')) $('#collapse0').addClass('show');
 		if (link == "static") { 
 			$('#staticModal').modal('show');
 		} else if(link == "#") {

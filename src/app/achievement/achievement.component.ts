@@ -4,21 +4,21 @@ import $ from 'jquery';
 import { animateCss } from '../animate'
 
 const TECHS = [
-"java.png",
-"android.png",
-"html.png",
-"css.png",
-"js.png",
-"jquery.png",
-"bootstrap.png",
-"nodejs.png",
+"android.jpg",
 "angular.png",
-"mongodb.png",
-"mysql.png",
+"bootstrap.jpg",
+"css.jpg",
+"git.jpg",
 "heroku.png",
-"git.png",
+"html.png",
+"java.jpg",
+"jquery.png",
+"js.jpg",
+"mongodb.jpg",
+"mysql.jpg",
+"nodejs.jpg",
+"photoshop.jpg",
 "ubuntu.png",
-"photoshop.png",
 ];
 
 const TITLES: Title[] = [

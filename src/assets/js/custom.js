@@ -12,7 +12,7 @@ function loadbar() {
 		c += 1;
 		var perc = ((100/tot*c) << 0) +"%";
 		prog.style.width = perc;
-		console.log(perc);
+		//console.log(perc);
 		stat.innerHTML = "Loading "+ perc;
 		if(c===tot) return doneLoading();
 	}
