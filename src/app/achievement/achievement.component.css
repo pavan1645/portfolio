@@ -2,6 +2,7 @@
 	background: url('/assets/images/ach_bg.jpg');
 	background-size: cover;
 	background-position: top center;
+	background-attachment: fixed;
 }
 .achCardLeft, .achCardRight {
 	min-height: 60vh;
