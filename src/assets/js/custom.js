@@ -1,13 +1,34 @@
 /*$(window).on('load',function() {
-	$('.loader').fadeOut('slow', function() {
-		$('.main').show(0);
-		window_loaded();
-	});
-});*/
-
-$(document).ready(function () {
-	window_loaded();
-})
+	loadbar();
+});
+*/
+loadbar();
+function loadbar() {
+	var img = document.images, c = 0;
+	var tot = img.length;
+	var prog = document.getElementById('loaderBar');
+	var stat = document.getElementById('percent');
+	function imgLoaded(){
+		c += 1;
+		var perc = ((100/tot*c) << 0) +"%";
+		prog.style.width = perc;
+		console.log(perc);
+		stat.innerHTML = "Loading "+ perc;
+		if(c===tot) return doneLoading();
+	}
+	function doneLoading(){
+		$('#loader').fadeOut('slow', function() {
+			$('#main').show(0);
+			window_loaded();
+		});
+	}
+	for(var i=0; i<tot; i++) {
+		var tImg     = new Image();
+		tImg.onload  = imgLoaded;
+		tImg.onerror = imgLoaded;
+		tImg.src     = img[i].src;
+	} 
+}
 
 function window_loaded() {
 	heightChange();
