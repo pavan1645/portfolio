@@ -8,28 +8,28 @@ const STATICS: Project[] = [
 {
 	title:"Patatap Clone",
 	desc:"A sound on keypress generation app.",
-	image:"patatap.png",
+	image:"patatap.jpg",
 	link:"https://pavan-static.herokuapp.com/patatap/",
 	tags:["HTML","CSS","Javascript","Howler.js","Paper.js"]
 },
 {
 	title:"ITSA RAIT Website",
 	desc:"College committee website.",
-	image:"itsa.png",
+	image:"itsa.jpg",
 	link:"https://pavan-static.herokuapp.com/itsa/",
 	tags:["HTML","CSS","Bootstrap"]
 },
 {
 	title:"TODO List",
 	desc:"A static todo list app.",
-	image:"todo.png",
+	image:"todo.jpg",
 	link:"https://pavan-static.herokuapp.com/todo/",
 	tags:["HTML","CSS","jQuery"]
 },
 {
 	title:"Myraa Dashboard",
 	desc:"Dashboard developed for Myraa Technologies along with its individual product pages and backend integration.",
-	image:"dashboard.png",
+	image:"dashboard.jpg",
 	link:"http://www.myraatechnologies.com/DB/dashboard.html",
 	tags:["HTML","CSS","jQuery","Bootstrap"]
 }
@@ -39,21 +39,21 @@ const PROJECTS: Project[] = [
 {
 	title:"Yelpcamp",
 	desc:"Campground rating website",
-	image:"yelpcamp.png",
+	image:"yelpcamp.jpg",
 	link:"https://github.com/pavan1645/YelpCamp",
 	tags:["Node.js","Express","Mongo","Passport.js","ejs"]
 },
 {
 	title:"VR Maps",
 	desc:"VR tour of our college - A Final Year Project",
-	image:"vrmaps.png",
+	image:"vrmaps.jpg",
 	link:"https://vrmaps.herokuapp.com/",
 	tags:["HTML","CSS","Javascript","Node.js","MongoDB"]
 },
 {
 	title:"Contact List",
 	desc:"MEAN app for performing CRUD operations on Contacts",
-	image:"contactlist.png",
+	image:"contactlist.jpg",
 	link:"https://github.com/pavan1645/contact-list-mean",
 	tags:["Mongo","Express","Angular","Node.js"]
 },
@@ -67,14 +67,14 @@ const PROJECTS: Project[] = [
 {
 	title:"Static Websites",
 	desc:"A bunch of static web projects",
-	image:"static.png",
+	image:"static.jpg",
 	link:"static",
 	tags:["HTML","CSS","Javascript","jQuery","Howler.js","Paper.js"]
 },
 {
 	title:"ArtBrowser",
 	desc:"An e-commerce website for buying and selling artworks.",
-	image:"artbrowser.png",
+	image:"artbrowser.jpg",
 	link:"http://www.artbrowserapp.com/",
 	tags:["HTML","CSS","jQuery","Bootstrap","Python","MySQL"]
 }
