@@ -20,7 +20,7 @@ $(document).ready( function() {
 	$('.techSlide').slick({
 		infinite: true,
 		autoplay: true,
-		autoplaySpeed: 000,
+		autoplaySpeed: 1000,
 		slidesToShow: 12,
 		slidesToScroll: 1,
 		adaptiveHeight: true,
