@@ -1,4 +1,11 @@
-$(document).ready( function() {
+$(window).on('load',function() {
+	$('.loader').fadeOut('slow', function() {
+		$('.main').show(0);
+		window_loaded();
+	});
+});
+
+function window_loaded() {
 	heightChange();
 	$(window).resize(function() {
 		heightChange();
@@ -14,7 +21,7 @@ $(document).ready( function() {
 	$('body').scrollspy({offset : navHeight});
 	
 	$('nav a').on('click',function(event) {
-		smoothScroll(this.hash, navHeight-10);
+		smoothScroll(this.hash, navHeight);
 	});
 
 	$('.techSlide').slick({
@@ -34,11 +41,15 @@ $(document).ready( function() {
 		}
 		]
 	});
+
+	particlesJS.load('particles-js', '/assets/js/particles.json', function() {
+		console.log("particles-js loaded");
+	});
 	
 	$(function () {
 		$('[data-toggle="tooltip"]').tooltip()
-	})
-});
+	});
+}
 
 function heightChange() {
 	if ($(this).width() < 768) {

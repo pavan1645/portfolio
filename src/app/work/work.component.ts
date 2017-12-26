@@ -91,9 +91,7 @@ export class WorkComponent implements OnInit {
 	constructor() { }
 
 	ngOnInit() {
-		particlesJS.load('particles-js', '/assets/js/particles.json', function() {
-			$('#collapse0').addClass('show');
-		});
+		$('#collapse0').addClass('show');
 	}
 
 	openProject(link: string){
