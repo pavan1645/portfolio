@@ -1,9 +1,13 @@
-$(window).on('load',function() {
+/*$(window).on('load',function() {
 	$('.loader').fadeOut('slow', function() {
 		$('.main').show(0);
 		window_loaded();
 	});
-});
+});*/
+
+$(document).ready(function () {
+	window_loaded();
+})
 
 function window_loaded() {
 	heightChange();
