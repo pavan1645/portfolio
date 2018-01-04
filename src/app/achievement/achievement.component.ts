@@ -84,7 +84,7 @@ export class AchievementComponent implements OnInit {
 
 
 	animate(direction : String){
-		animateCss('.achCardLeft, .achCardRight','fadeIn' + direction, null);
+		animateCss('.achCardLeft, .achCardRight','slideIn' + direction, null);
 	}
 
 	achInc() {
