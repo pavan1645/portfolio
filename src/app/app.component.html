@@ -2,10 +2,11 @@
 
 	<nav id="navbar" class="navbar navbar-expand-lg fixed-top px-0">
 		<a class="navbar-brand pl-4" href="#hero">Pavankumar Mahadik</a>
-		<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+		 aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		
+
 		<div class="collapse navbar-collapse justify-content-end mr-md-3" id="navbarSupportedContent">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
@@ -32,7 +33,11 @@
 			<div class="row vh60">
 				<div class="col-sm-7 centerCardDetails p-md-4 p-2 text-left" style="">
 					<h2 class="mb-0 text-light">Pavankumar Mahadik</h2>
-					<h4 class="text-gold mb-4"><small>Web and Android Developer<hr class="underlineHR inverse left"></small></h4>
+					<h4 class="text-gold mb-4">
+						<small>Web and Android Developer
+							<hr class="underlineHR inverse left">
+						</small>
+					</h4>
 					<h5 *ngFor="let detail of details">
 						<i class="mt-2 mx-2 fa fa-fw text-gold" [ngClass]="detail.icon"></i>
 						<span class="text-light font-weight-bold">{{detail.title}} :</span>
@@ -51,9 +56,11 @@
 		</div>
 	</div>
 </div>
-<div class="float-btn" data-toggle="tooltip" data-placement="top" title="Download Resume">
+<div class="float-btn" data-toggle="tooltip" data-placement="top" title="View Resume">
 	<a href="http://tiny.cc/resume-pavan1645" target="_blank">
-		<button class="btn bg-success text-light"><i class="fa fa-download fa-lg"></i></button>
+		<button class="pulse-button btn bg-success text-light">
+			<i class="fa fa-download fa-lg"></i>
+		</button>
 	</a>
 </div>
 <div>
