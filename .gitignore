@@ -2,9 +2,10 @@
 
 # extras
 src/assets/images/tech_v0
+src/assets/images/ResizedPhotos.0.zip
 
 # compiled output
-/dist
+# /dist
 /tmp
 /out-tsc
 
