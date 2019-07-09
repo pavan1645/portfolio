@@ -12,9 +12,9 @@
 				<div class="col-3 text-md-right">
 					<h4>{{experience.year}}</h4>
 				</div>
-				<div class="col-9 col-md-7 timeline-item">
+				<div class="col-9 timeline-item">
 					<h4><strong>{{experience.title}}</strong></h4>
-					<ul>
+					<ul class="pl-4">
 						<li *ngFor="let d of experience.desc" [innerHTML]="d"></li>
 					</ul>
 				</div>
