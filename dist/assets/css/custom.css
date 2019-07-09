@@ -1,4 +1,4 @@
-*{font-family: 'Raleway', sans-serif;}
+*{font-family: 'Lato', sans-serif;}
 a, a:active, a:hover, a:focus, a:visited{color: black; text-decoration: none;}
 .text-purple{color: #404086}
 .text-gold{color: #e9a92b}
@@ -112,6 +112,10 @@ nav .active {background-color: red; box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25
 }
 .slick-prev:before, .slick-next:before {
 	color: #404086;
+}
+
+@media screen and (min-width: 768px){
+	body { font-size: 18px }
 }
 
 @media screen and (max-width: 768px){
