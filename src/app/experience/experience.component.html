@@ -14,7 +14,9 @@
 				</div>
 				<div class="col-9 col-md-7 timeline-item">
 					<h4><strong>{{experience.title}}</strong></h4>
-					<h6 class="text-justify" [innerHTML]="experience.desc"></h6>
+					<ul>
+						<li *ngFor="let d of experience.desc" [innerHTML]="d"></li>
+					</ul>
 				</div>
 			</div>
 		</div>

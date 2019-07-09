@@ -5,33 +5,47 @@ import { Timeline } from '../timeline';
 import { onScreen } from '../onScreen';
 
 const EXPERIENCES : Timeline[] = [
-{
-	year: "Jun '17 - Aug '17",
-	title: "Myraa Technologies - Frontend Developer",
-	desc: "Worked as a full-time Frontend Developer with Myraa Technologies - \
-	An Artificial Intelligence and Machine Learning specialist startup, during the vacations of June 2017. \
-	Worked on multiple projects simultaneously using different frontend technologies. <br /> \
-	Some noteworthy projects included frontend as well as backend integration handling of various ML & AI Products \
-	like Regex Classifier, SmartPlug, Invoice 2 JSON, Flowchart Parser, Ad Banner Recommender, etc. \
-	Also, helped in Full Stack Development of ArtBrowser - An eCommerce website for selling Artworks."
-},
-{
-	year: "Feb '17 - May '17",
-	title: "Tata Consultancy Services - Project Trainee",
-	desc: "Was part of an intensive 12-week remote internship program with TCS. \
-	The program was initiated by our college with a vision to provide hands-on industrial training and \
-	experience to the students. It also included working and completing a project within the stipulated time frame. <br>\
-	I worked in a team, on an Android App development project which included database connectivity. \
-	The internship also required us to weekly update our mentors with the progress."
-},
-{
-	year: "Mar '16 - Aug '16",
-	title: "Internshala - Internshala Student Partner",
-	desc: "Worked as a campus brand ambassador for Internshala - An internship providing platform for students. \
-	Promoted Internshala and its internships and also its various virtual training courses available for students. \
-	The internship also included promoting the brand throughout various classes and tuitions in my locality. <br>\
-	Learned various marketing techniques of brand promotion and also sharpened my communication skills."
-},
+	{
+		year: "May '19 - Present",
+		title: "Freelancer",
+		desc: ["Developed backend for a Realtime Chat Application using NodeJS, Socket.IO, Redis and MongoDB for LetsPartii​."]
+	},
+	{
+		year: "June '18 - May '19",
+		title: "Software Developer​ - Coutloot​",
+		desc: [
+			"Lead and developed frontend of the Coutloot website with a team of 3 interns and 1 full time employee.",
+			"Worked on the SEO of the website.",
+			"Developed Coutloot Search Engine using Elasticsearch and implemented plugins to sync MongoDB and Elasticsearch indexes.",
+			"Contributed in planning and migration of entire Coutloot database from MySQL to MongoDB.",
+			"Designed, developed and migrated multiple internal panels used by other non-technical teams at Coutloot.",
+			"Developed dynamic email templates and created a communication system to send Email, SMS and Push Notifications to the users.",
+			"Created new APIs for the Coutloot app and website using NodeJS.",
+		]
+	},
+	{
+		year: "Feb '18 - May '18",
+		title: "Software Developer Intern - Coutloot",
+		desc: [
+			"Contributed in planning phase of database migration.",
+			"Developed few HTML and email templates."
+		]
+	},
+	{
+		year: "June '17 - Aug '17",
+		title: "Frontend Developer Intern - ​Myraa Technologies",
+		desc: [
+			"Worked on developing frontend and integrating backend APIs of an e-commerce website for a client.",
+			"Developed a web-scraper to scrape upcoming events in the city using Python and BeautifulSoup4."
+		]
+	},
+	{
+		year: "Feb '17 - May '17",
+		title: "Project Trainee - Tata Consultancy Services",
+		desc: [
+			"Developed an Android Application to create Customer Journey Maps, in a team of 4 members.",
+		]
+	}
 ]
 
 @Component({
@@ -42,9 +56,9 @@ const EXPERIENCES : Timeline[] = [
 export class ExperienceComponent implements OnInit {
 	experiences : Timeline[] = EXPERIENCES;
 	constructor() { }
-
+	
 	ngOnInit() {
-	  	var eduLoaded = false;
+		var eduLoaded = false;
 		$(window).scroll(function(){
 			if(onScreen('#experience') && !eduLoaded){
 				$('#experience .tl').css('visibility', 'visible');
@@ -53,5 +67,5 @@ export class ExperienceComponent implements OnInit {
 			}
 		});
 	}
-
+	
 }
