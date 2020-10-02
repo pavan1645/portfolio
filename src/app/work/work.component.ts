@@ -6,6 +6,13 @@ declare let $: any;
 
 const STATICS: Project[] = [
 {
+	title:"Eventophile",
+	desc:"A responsive event landing page",
+	image:"eventophile.jpg",
+	link:"https://github.com/pavan1645/eventophile",
+	tags:["HTML","CSS","Javascript"]
+},
+{
 	title:"Patatap Clone",
 	desc:"A sound on keypress generation app.",
 	image:"patatap.jpg",
@@ -37,11 +44,11 @@ const STATICS: Project[] = [
 
 const PROJECTS: Project[] = [
 {
-	title:"Yelpcamp",
-	desc:"Campground rating website",
-	image:"yelpcamp.jpg",
-	link:"https://github.com/pavan1645/YelpCamp",
-	tags:["Node.js","Express","Mongo","Passport.js","ejs"]
+	title:"Vocabbuddy",
+	desc:"Android App and Progressive Web Application to improve vocabulary",
+	image:"vocabbuddy.jpg",
+	link:"https://github.com/pavan1645/vocabbuddy-spa",
+	tags:["Android", "Angular", "PWA","Express","Mongo","Passport.js","ejs"]
 },
 {
 	title:"VR Maps",
@@ -49,6 +56,13 @@ const PROJECTS: Project[] = [
 	image:"vrmaps.jpg",
 	link:"https://vrmaps.herokuapp.com/",
 	tags:["HTML","CSS","Javascript","Node.js","MongoDB"]
+},
+{
+	title:"Yelpcamp",
+	desc:"Campground rating website",
+	image:"yelpcamp.jpg",
+	link:"https://github.com/pavan1645/YelpCamp",
+	tags:["Node.js","Express","Mongo","Passport.js","ejs"]
 },
 {
 	title:"Contact List",
@@ -70,13 +84,6 @@ const PROJECTS: Project[] = [
 	image:"static.jpg",
 	link:"static",
 	tags:["HTML","CSS","Javascript","jQuery","Howler.js","Paper.js"]
-},
-{
-	title:"ArtBrowser",
-	desc:"An e-commerce website for buying and selling artworks.",
-	image:"artbrowser.jpg",
-	link:"http://www.artbrowserapp.com/",
-	tags:["HTML","CSS","jQuery","Bootstrap","Python","MySQL"]
 }
 ]
 

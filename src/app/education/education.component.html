@@ -1,0 +1,22 @@
+<div id="education" class="vh50">
+	<div class="container py-4">
+		<div class="row text-center pb-4">
+			<hr class="mt-4 px-0 mx-0 col-4 titleHR">
+			<div  class="col-md-4">
+				<h1 class="title">Education <hr class="underlineHR inverse"> </h1>
+			</div>
+			<hr class="mt-4 px-0 mx-0 col-4 titleHR">
+		</div>
+		<div class="px-md-4">
+			<div class="row animated tl" *ngFor="let item of items">
+				<div class="col-3 text-md-right">
+					<h4>{{item.year}}</h4>
+				</div>
+				<div class="col-9 timeline-item">
+					<h4><strong>{{item.title}}</strong></h4>
+					<h6>{{item.desc[0]}}</h6>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -32,7 +32,7 @@ const SOCIAL = [
 const DETAILS = [
 {
 	title: "Age",
-	desc: "21",
+	desc: "23",
 	icon: "fa-user"
 },
 {
@@ -42,17 +42,17 @@ const DETAILS = [
 },
 {
 	title: "Phone",
-	desc: "+91 8082160741",
+	desc: "+1 (619) 214-0293",
 	icon: "fa-phone"
 },
 {
 	title: "Address",
-	desc: "Kamothe, Navi Mumbai",
+	desc: "San Diego, CA",
 	icon: "fa-map-marker"
 },
 {
 	title: "Website",
-	desc: "pavanmahadik.herokuapp.com",
+	desc: "pavanmahadik.tk",
 	icon: "fa-globe"
 }
 ]

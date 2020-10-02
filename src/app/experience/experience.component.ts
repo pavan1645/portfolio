@@ -6,31 +6,44 @@ import { onScreen } from '../onScreen';
 
 const EXPERIENCES : Timeline[] = [
 {
-	year: "Jun '17 - Aug '17",
-	title: "Myraa Technologies - Frontend Developer",
-	desc: "Worked as a full-time Frontend Developer with Myraa Technologies - \
-	An Artificial Intelligence and Machine Learning specialist startup, during the vacations of June 2017. \
-	Worked on multiple projects simultaneously using different frontend technologies. <br /> \
-	Some noteworthy projects included frontend as well as backend integration handling of various ML & AI Products \
-	like Regex Classifier, SmartPlug, Invoice 2 JSON, Flowchart Parser, Ad Banner Recommender, etc. \
-	Also, helped in Full Stack Development of ArtBrowser - An eCommerce website for selling Artworks."
+	year: "May '20 - Aug '20",
+	title: "Amazon - Software Development Engineer Intern",
+	desc: [
+		"Designed and architected a project architecture to dynamically create promotions.",
+		"Developed a Minimal Lovable Product (MLP) using React and NodeJs with native AWS Technologies."
+	]
+},
+{
+	year: "May '19 - June '19",
+	title: "Freelancer - LetsPartii",
+	desc: [
+		"Developed backend for a Chat Application using NodeJS Socket.IO, Redis and MongoDB for LetsPartii in 1 month."
+	]
+},
+{
+	year: "June '18 - May '19",
+	title: "Software Developer - Coutloot",
+	desc: [
+		"Led a team of 5 to build and maintain the frontend and SEO of the Coutloot e-commerce website.",
+		"Analyzed metrics obtained from Google Analytics and proposed ways to improve the SEO of the website.",
+		"Successfully reduced the product search time from 150ms to 10ms using Elasticsearch.",
+		"Streamlined user communication process by creating a micro-service to communicate effectively with users."		
+	]
+},
+{
+	year: "June '17 - Aug '17",
+	title: "Frontend Developer Intern - Myraa Technologies",
+	desc: [
+		"Created webpages and integrated them with backend APIs of an e-commerce website.",
+		"Built a web-scrapper in Python to create and update the database with data collected from various websites."
+	]
 },
 {
 	year: "Feb '17 - May '17",
-	title: "Tata Consultancy Services - Project Trainee",
-	desc: "Was part of an intensive 12-week remote internship program with TCS. \
-	The program was initiated by our college with a vision to provide hands-on industrial training and \
-	experience to the students. It also included working and completing a project within the stipulated time frame. <br>\
-	I worked in a team, on an Android App development project which included database connectivity. \
-	The internship also required us to weekly update our mentors with the progress."
-},
-{
-	year: "Mar '16 - Aug '16",
-	title: "Internshala - Internshala Student Partner",
-	desc: "Worked as a campus brand ambassador for Internshala - An internship providing platform for students. \
-	Promoted Internshala and its internships and also its various virtual training courses available for students. \
-	The internship also included promoting the brand throughout various classes and tuitions in my locality. <br>\
-	Learned various marketing techniques of brand promotion and also sharpened my communication skills."
+	title: "Project Trainee - Tata Consultancy Services ( TCS )",
+	desc: [
+		"Co-ordinated with team members to develop an Android Application, Customer Journey Maps for TCS."
+	]
 },
 ]
 

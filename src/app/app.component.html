@@ -13,13 +13,13 @@
 					<a class="nav-link" href="#about">About</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#education">Education</a>
+					<a class="nav-link" href="#experience">Experience</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#work">Work</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#experience">Experience</a>
+					<a class="nav-link" href="#education">Education</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#achievement">Achievement</a>
@@ -34,13 +34,13 @@
 				<div class="col-sm-7 centerCardDetails p-md-4 p-2 text-left" style="">
 					<h2 class="mb-0 text-light">Pavankumar Mahadik</h2>
 					<h4 class="text-gold mb-4">
-						<small>Web and Android Developer
+						<small>Fullstack Web and Android Developer
 							<hr class="underlineHR inverse left">
 						</small>
 					</h4>
 					<h5 *ngFor="let detail of details">
 						<i class="mt-2 mx-2 fa fa-fw text-gold" [ngClass]="detail.icon"></i>
-						<span class="text-light font-weight-bold">{{detail.title}} :</span>
+						<span class="text-light font-weight-bold">{{detail.title}}: </span>
 						<span class="text-gold">{{detail.desc}}</span>
 					</h5>
 				</div>
@@ -65,7 +65,8 @@
 </div>
 <div>
 	<app-abedu></app-abedu>
-	<app-work></app-work>
 	<app-experience></app-experience>
+	<app-work></app-work>
+	<app-education></app-education>
 	<app-achievement></app-achievement>
 </div>
